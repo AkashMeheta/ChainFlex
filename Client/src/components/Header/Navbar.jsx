@@ -34,12 +34,12 @@ const Header = () => {
     },
     {
       name: 'Explore',
-      slug: "/explore",
+      slug: "#explore",
       active: true
     },
     {
       name: 'Contact us',
-      slug: "/Contact_us",
+      slug: "#Contact_us",
       active: true
     },
     {

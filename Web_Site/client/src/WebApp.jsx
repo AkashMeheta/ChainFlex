@@ -1,9 +1,8 @@
-import { useState } from "react"
+
 import Wallet from "./components/Wallet/Wallet"
 import Navigation from "./components/Navigation/Navigation"
 import DisplayPannel from './components/Display Pannel/DisplayPannel'
 
-import Separator from "./components/ui/Separator"
 import { StakingProvider } from './context/StakingContext'
 import Tabs from "./components/Tabs/Tabs"
 import './App.css'
@@ -19,13 +18,10 @@ function WebApp() {
       <div className="w-fit m-auto border-4 border-[var(--secondary-color)] h-fit mt-8 flex flex-col items-center justify-center bg-white">
         <Wallet>
           <Navigation />
-
-          
           <StakingProvider>
             <DisplayPannel />
             <Tabs></Tabs>
           </StakingProvider>
-          
           <Toaster className="toast" position="bottom-left"/>
         </Wallet>
       </div>

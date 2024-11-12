@@ -9,7 +9,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 // import { AuthLayout, Login } from './components/index.js'
 import { Home, Login, SignUp } from "./Pages/PageIndex.js"
 import Dashboard from './Pages/Dashboard.jsx'
-import { AuthLayout, WebApp } from "./components/index.js";
+import { AuthLayout, Stacking } from "./components/index.js";
 
 const router = createBrowserRouter([
   {
@@ -48,7 +48,7 @@ const router = createBrowserRouter([
         path: "/stack",
         element: (
           <AuthLayout authentication>
-              <WebApp />
+              <Stacking />
           </AuthLayout>
         )
       },

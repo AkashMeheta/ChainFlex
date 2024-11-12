@@ -1,31 +1,24 @@
-import React from 'react'
+import React from 'react';
+import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
-    return (
-        <>
-            <h1 className=' ml-10 text-[3vw]  mt-28'>GET IN TOUCH</h1>
-            <div className='flex ml-10 mt-10 mb-10 justify-between'>
-                <div className='w-[45%] flex flex-col justify-between'>
-                    <div className='text-2xl'>
-                        <h2>Instagram</h2>
-                        <a href="#">@reallygreatsite</a>
-                    </div>
-                    <div className='text-2xl'>
-                        <h2>Email</h2>
-                        <a href="#">hello@reallygreatsite.com</a>
-                    </div>
-                    <div className='text-2xl'>
-                        <h2>Phone</h2>
-                        <a href="#">123-456-789</a>
-                    </div>
-                </div>
-                <div className='w-[45%]'>
-                    <img className='w-48' src="public/img1.jpg" alt="" />
-                </div>
-            </div>
-        </>
+  return (
+    <footer className="flex flex-col items-center py-6 space-y-4 mt-10">
+      <nav className="flex space-x-6">
+        <a href="#" className="hover:text-gray-800">About</a>
+        <a href="#" className="hover:text-gray-800">Blog</a>
+        <a href="#" className="hover:text-gray-800">Partners</a>
+      </nav>
+      <div className="flex space-x-4 text-2xl">
+        <a href="#" className="hover:text-gray-800"><FaFacebook /></a>
+        <a href="#" className="hover:text-gray-800"><FaInstagram /></a>
+        <a href="#" className="hover:text-gray-800"><FaGithub /></a>
+      </div>
+      <p className="text-sm text-gray-500">
+        Decentralised Finance Application © 2024 Final Year Project
+      </p>
+    </footer>
+  );
+};
 
-    )
-}
-
-export default Footer
+export default Footer;

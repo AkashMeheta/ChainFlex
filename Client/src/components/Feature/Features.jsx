@@ -48,7 +48,7 @@ const Features = () => {
   ]
   return (
     <>
-        <div className='mt-10 ml-10 mb-[2vw]'>
+        <div className='mt-10 ml-10 mb-[2vw]' id='explore'>
             <p className='text-[4vw] font-bold'>Why Choose <span className='text-[#EC8305]'>ChainFlex?</span></p>
         </div>
        

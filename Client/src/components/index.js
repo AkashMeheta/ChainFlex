@@ -29,6 +29,7 @@ import Receive from "./Dashboard/ActivityUtils/Receive"
 
 
 import WebApp from "../../../Web_Site/client/src/WebApp";
+import Stacking from "./Stack/Stacking";
 export  { Header,
          Hero, 
          Infinite_Feature, 
@@ -57,5 +58,6 @@ export  { Header,
          SendUi,
          Receive,
 
-         WebApp
+         WebApp,
+         Stacking
         };
