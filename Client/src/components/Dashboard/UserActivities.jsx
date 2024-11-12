@@ -62,7 +62,7 @@ const UserActivities = () => {
                         close => (
                             <div className='border-4 p-5 shadow-xl bg-teal-400 text-black'>
                                 {activity.component}
-                                <Button bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-xl mt-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick=
+                                <Button bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-xl mt-3  hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick=
                                 {() => close()}>
                                     Close
                                 </Button>

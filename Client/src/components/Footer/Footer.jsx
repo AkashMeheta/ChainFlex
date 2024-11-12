@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center py-6 space-y-4 mt-10">
+    <footer className="flex flex-col items-center py-6 space-y-4">
       <nav className="flex space-x-6">
         <a href="#" className="hover:text-gray-800">About</a>
         <a href="#" className="hover:text-gray-800">Blog</a>

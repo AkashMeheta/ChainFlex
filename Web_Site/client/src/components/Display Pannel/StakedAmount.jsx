@@ -26,9 +26,9 @@ const StakedAmount = ()=>{
    },[stakingContract,selectedAccount,isReload])
 
    return(
-      <div className="staked-amount flex justify-center">
-       <p className="text-lg font-semibold text-black mr-2">Staked Amount:</p> 
-       <span className="text-lg font-semibold text-black">{stakedAmount}</span>
+      <div className="staked-amount flex justify-center gap-2">
+       <p className="text-xl font-semibold text-black mr-2">Staked Amount:</p> 
+       <span className="text-xl font-semibold text-black">{stakedAmount}</span>
       </div>
    )
 }

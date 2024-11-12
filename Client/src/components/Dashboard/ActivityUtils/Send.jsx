@@ -69,10 +69,6 @@ const SendUi = () => {
                     Confirm
                 </Button>
             </div>
-            <div>
-                <h1>{`Address: ${address}`}</h1>
-                <h1>{`Amount: ${value} ETH`}</h1>
-            </div>
         </div>
     );
 };

@@ -30,9 +30,9 @@ const EarnedReward =()=>{
   },[stakingContract,selectedAccount])
 
   return(
-    <div className="earned-reward flex justify-center">
-      <p className="text-lg font-semibold text-black">Earned Reward:   </p>
-      <span className="text-lg font-semibold text-black">{rewardVal}</span>
+    <div className="earned-reward flex justify-center gap-2">
+      <p className="text-xl font-semibold text-black">Earned Reward:   </p>
+      <span className="text-xl font-semibold text-black">{rewardVal}</span>
   </div>
   )
 }

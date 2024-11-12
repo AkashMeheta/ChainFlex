@@ -2,7 +2,10 @@ import React from 'react'
 import {WebApp } from "../index"
 const Stacking = () => {
   return (
-    <WebApp/>
+    <div className='mb-36'>
+        <WebApp/>
+    </div>
+    
   )
 }
 

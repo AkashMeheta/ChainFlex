@@ -22,9 +22,9 @@ const RewardRate = ()=>{
   },[stakingContract,selectedAccount])
 
   return(
-    <div className="reward-rate flex justify-center">
-      <p className="text-lg font-semibold text-black">Reward Rate:    </p>
-      <span className="text-lg font-semibold text-black">{rewardRate} token/sec </span>
+    <div className="reward-rate flex justify-center gap-2">
+      <p className="text-xl font-semibold text-black">Reward Rate:    </p>
+      <span className="text-xl font-semibold text-black">{rewardRate} token/sec </span>
   </div>
   )
 }

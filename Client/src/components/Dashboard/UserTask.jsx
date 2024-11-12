@@ -2,7 +2,7 @@ import React from 'react'
 import { LuSend } from "react-icons/lu";
 import { BiSolidCoinStack } from "react-icons/bi";
 import { IoFlashOff } from "react-icons/io5";
-import { redirect } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const tasks = [
     {
         name: "Stack Token",
@@ -26,7 +26,7 @@ const UserTask = () => {
     <div className='flex justify-around mt-7 flex-wrap'>
         {
             tasks.map((task) => (
-                <a href={`${task.redirectUrl}`} className='cursor-pointer' key={task.name}>
+                <Link to={`${task.redirectUrl}`} className='cursor-pointer' key={task.name}>
                     <div className={`${task.textColor} ${task.bgColor} rounded-full p-2 px-6 border-3 border-black flex items-center gap-5`}>
                         <div>{task.img}</div>
                         <div className='flex flex-col items-center'>
@@ -34,7 +34,7 @@ const UserTask = () => {
                             <div className='font-semibold'>{task.subTitle}</div>
                         </div>
                     </div>
-                </a>
+                </Link>
             ))
         }
     </div>

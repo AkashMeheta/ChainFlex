@@ -13,15 +13,16 @@ const Hero = () => {
   
   const handleWallet = async () => {
     try {
-      const { provider, selectedAccount, stakingContract, stakeTokenContract, chainId } = await connectWallet();
+      const { provider, selectedAccount, stakingContract, stakeTokenContract,rewardTokenContract, chainId  } = await connectWallet();
       const balance = await provider.getBalance(selectedAccount);
       const ethValue = balance / 1000000000000000000n;
+      console.log("Hero:", stakingContract, stakeTokenContract, rewardTokenContract);
       dispatch(changeState({
-        
         balance: ethValue.toString(),
         account: selectedAccount,
-        stakingContract: stakingContract.toString(),
-        stakeTokenContract: stakeTokenContract.toString(),
+        stakingContract: stakingContract,
+        stakeTokenContract: stakeTokenContract,
+        rewardTokenContract: rewardTokenContract,
         chainId
       }));
       localStorage.setItem("account", selectedAccount);

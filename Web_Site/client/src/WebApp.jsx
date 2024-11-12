@@ -15,7 +15,7 @@ function WebApp() {
 
   return (
     
-      <div className="w-fit m-auto border-4 border-[var(--secondary-color)] h-fit mt-8 flex flex-col items-center justify-center bg-white">
+      <div className="w-fit m-auto border-4 border-[var(--secondary-color)] h-fit mt-8 flex flex-col items-center justify-center bg-white rounded-lg">
         <Wallet>
           <Navigation />
           <StakingProvider>

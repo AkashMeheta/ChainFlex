@@ -33,9 +33,9 @@ const TokenApproval =()=>{
   <div className="flex justify-between items-center mb-4">
      <form onSubmit={approveToken} className="token-amount-form">
         <label className="token-input-label  mr-3 text-xl font-semibold text-black">Token Approval:</label>
-        <input type="text" ref={approvedTokenRef} className="bg-white text-black border-4 border-black shadow-sm"/>
+        <input type="text" ref={approvedTokenRef} className="bg-white text-black border-4 border-black shadow-sm text-lg font-semibold"/>
         
-        <Button type="submit" bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-lg ml-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={approveToken}>
+        <Button type="submit" bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl text-lg ml-10 font-semibold hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={approveToken}>
           Token Approval
         </Button>
       </form>

@@ -44,7 +44,7 @@ const StakeAmount =()=>{
     return (
       <form onSubmit={stakeToken} className="stake-amount-form ">
         <label className="mr-3 text-xl font-semibold text-black">Enter Staked Amount:</label>
-        <input type="text" ref={stakeAmountRef} className="bg-white text-black border-4 border-black shadow-sm mr-11"/>
+        <input type="text" ref={stakeAmountRef} className="bg-white text-black border-4 border-black shadow-sm mr-11 text-lg"/>
         
         <Button type="submit" bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-lg ml-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={stakeToken}>
           Stake Token

@@ -5,7 +5,7 @@ import Button from "../Button/Button";
 import { handleAccountChange } from "../../utils/handleAccountChange";
 import { handleChainChange } from "../../utils/handleChainChange";
 import { toast } from "react-hot-toast";
-
+import { Link } from "react-router-dom";
 
 const Wallet =({children})=>{
  const [state,setState]=useState({
@@ -43,10 +43,15 @@ const Wallet =({children})=>{
    <div className=" w-fit p-8 flex  justify-center items-center flex-col gap-6">
      <Web3Context.Provider value={state}>{children}</Web3Context.Provider>
      {isLoading && <p>Loading...</p>}
-     
-     <Button bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-xl mt-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={handleWallet}>
-      Connect Wallet
-      </Button>         
+     <div className="flex justify-around w-full">
+      <Button bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-xl mt-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold">
+         <Link to="/dashboard">Back to Dashboard</Link>
+      </Button> 
+      <Button bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-xl mt-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={handleWallet}>
+         Connect Wallet
+      </Button>        
+     </div>
+      
    </div>
  )
 }

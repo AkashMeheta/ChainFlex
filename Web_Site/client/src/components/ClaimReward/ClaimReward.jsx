@@ -19,7 +19,8 @@ const ClaimReward = () => {
       // Fetch the full transaction (contains from, to, value, gas, etc.)
       const transactionlog = await provider.getTransaction(transaction.hash);
       console.log('Transaction Details:', transactionlog);
-
+      const receipt = await provider.getTransactionReceipt(transaction.hash);
+      console.log('Transaction Receipt:', receipt);
       // Optional: Log specific data from the receipt
       console.log('Status:', receipt.status === 1 ? 'Success' : 'Failure');
       console.log('Gas Used:', receipt.gasUsed.toString());
