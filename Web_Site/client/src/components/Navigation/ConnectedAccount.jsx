@@ -14,8 +14,8 @@ const ConnectedAccount = () => {
 
   return (
     <div>
-      <p className="connected-ac text-black font-semibold text-base">
-        {selectedAccount ? shortAdd : "Connect Account"}
+      <p className=" text-black font-semibold text-base">
+        Account: {selectedAccount ? shortAdd : "Connect Account"}
       </p>
     </div>
   );

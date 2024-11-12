@@ -40,7 +40,7 @@ const Wallet =({children})=>{
     }
  }
  return (
-   <div className="Connect-Wallet w-fit">
+   <div className=" w-fit p-8 flex  justify-center items-center flex-col gap-6">
      <Web3Context.Provider value={state}>{children}</Web3Context.Provider>
      {isLoading && <p>Loading...</p>}
      

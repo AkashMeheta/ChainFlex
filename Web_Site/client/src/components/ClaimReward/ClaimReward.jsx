@@ -44,7 +44,7 @@ const ClaimReward = () => {
   return (
     <>
       <div className="claim-reward flex items-center justify-center">
-        <Button bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-xl mt-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={claimReward}>
+        <Button bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-xl  hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={claimReward}>
           Claim Reward
         </Button>
       </div>

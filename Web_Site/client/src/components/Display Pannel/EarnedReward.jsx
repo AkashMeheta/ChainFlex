@@ -31,7 +31,7 @@ const EarnedReward =()=>{
 
   return(
     <div className="earned-reward flex justify-center">
-      <p className="text-lg font-semibold text-black">Earned Reward:</p>
+      <p className="text-lg font-semibold text-black">Earned Reward:   </p>
       <span className="text-lg font-semibold text-black">{rewardVal}</span>
   </div>
   )

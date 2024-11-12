@@ -4,7 +4,7 @@ import EarnedReward from "./EarnedReward";
 
 const DisplayPannel = ()=>{
   return(   
-  <div className="top-wrapper">
+  <div className="p-4 flex flex-col gap-2">
     <StakedAmount/>
     <RewardRate/>
     <EarnedReward/>

@@ -4,15 +4,14 @@ import ClaimReward from "../ClaimReward/ClaimReward";
 
 const Navigation = ()=>{
   return(
-    <header className="navbar flex justify-between gap-10">
-    <div className="navbar-btns ">
+    <div className="flex justify-between gap-10 w-full p-4">
       <ClaimReward />
-    </div> 
-    <div className="navbar-acc ">
+
+    <div className="flex items-center flex-col">
       <ConnectedAccount />
       <ConnectedNetwork />
     </div>
-  </header>
+  </div>
   )
 }
 export default Navigation;

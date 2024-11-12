@@ -48,7 +48,7 @@ const WithdrawStakeAmount =()=>{
             <label className="mr-3 text-xl font-semibold text-black">Withdraw Token:</label>
             <input type="text" ref={withdrawStakeAmountRef} className="bg-white text-black border-4 border-black shadow-sm mr-11"/>
             
-            <Button type="submit" bgColor="bg-[#EC8305]" textColor="text-black" className="ml-11 rounded-xl font-bold text-lg mt-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={withdrawStakeToken}>
+            <Button type="submit" bgColor="bg-[#EC8305]" textColor="text-black" className="rounded-xl font-bold text-lg ml-10 hover:bg-[#DBD3D3] hover:text-2xl hover:font-bold" onClick={withdrawStakeToken}>
               Withdraw Staked Token
             </Button>
       </form>

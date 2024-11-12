@@ -28,7 +28,7 @@ import SendUi from "./Dashboard/ActivityUtils/Send";
 import Receive from "./Dashboard/ActivityUtils/Receive"
 
 
-import WebApp from "../../../Web3/client/src/WebApp";
+import WebApp from "../../../Web_Site/client/src/WebApp";
 export  { Header,
          Hero, 
          Infinite_Feature, 

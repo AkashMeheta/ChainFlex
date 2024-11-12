@@ -23,7 +23,7 @@ const RewardRate = ()=>{
 
   return(
     <div className="reward-rate flex justify-center">
-      <p className="text-lg font-semibold text-black">Reward Rate:</p>
+      <p className="text-lg font-semibold text-black">Reward Rate:    </p>
       <span className="text-lg font-semibold text-black">{rewardRate} token/sec </span>
   </div>
   )
