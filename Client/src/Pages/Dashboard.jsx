@@ -52,7 +52,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <div className='w-3/5 m-auto border-4 border-[var(--secondary-color)] bg-white h-[80vh] mt-8'>
+      <div className='w-3/5 m-auto border-4 border-[var(--secondary-color)] bg-white h-fit pb-10 mt-8'>
           <div className='flex justify-around mt-8 flex-wrap'>
             <h1 className='text-black font-semibold text-xl'>
               {
@@ -73,21 +73,21 @@ const Dashboard = () => {
             </h1>
           </div>
 
-          <div>
+          
             <UserActivities></UserActivities>
-          </div>
+         
 
           <hr className="my-4 border-1 border-black w-3/4 m-auto" />
 
-          <div>
+        
           <UserTask/>
-          </div>
+          
 
           <hr className="my-6 border-1 border-black w-3/4 m-auto" />
 
-          <div>
+          
             <Infobar></Infobar>
-          </div>
+          
           <Toaster position='bottom right'/>
       </div>
     </>
