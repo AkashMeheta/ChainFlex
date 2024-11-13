@@ -16,28 +16,25 @@ const ClaimReward = () => {
           success: 'Transaction successful 👌',
           error: 'Transaction failed 🤯'
         });
-      // Fetch the full transaction (contains from, to, value, gas, etc.)
+      
       const transactionlog = await provider.getTransaction(transaction.hash);
       console.log('Transaction Details:', transactionlog);
       const receipt = await provider.getTransactionReceipt(transaction.hash);
       console.log('Transaction Receipt:', receipt);
-      // Optional: Log specific data from the receipt
+     
       console.log('Status:', receipt.status === 1 ? 'Success' : 'Failure');
       console.log('Gas Used:', receipt.gasUsed.toString());
       console.log('Logs:', receipt.logs);
 
-      // Example: Loop through logs and print details
+      
       receipt.logs.forEach((log, index) => {
         console.log(`Log ${index + 1}:`, log);
       });
-      // if(receipt.status === 1){
-      //     setTransactionStatus("Transaction Is Successful")
-      //     setTimeout(()=>{
-      //       setTransactionStatus("")
-      //     },5000) 
-      //   } else{
-      //     setTransactionStatus("Transaction failed. Please try again.");
-      //   }
+      if(receipt.status === 1){
+          toast.success("Transaction Is Successful")
+        } else{
+          toast.error("Transaction failed. Please try again.");
+        }
     } catch (error) {
       console.error("Claim Reward Failed", error.message)
     }
